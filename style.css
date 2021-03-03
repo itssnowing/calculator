@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.page-container{
+    font-size: 24px;
+    font-family: 'Baloo 2', serif;
+    color: #d8f7d7;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    background: #1f594a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "num-input num-input num-input num-input"
+      "num-clear num-clear num-del divide"
+      "seven eight nine multiply"
+      "four five six subtract"
+      "one two three add"
+      "dot zero equal equal";
+    border-radius: 10px;
+    height: 600px;
+    width: 350px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.grid-container:hover{
+    cursor: pointer;
+}
+
+.button{
+    background: #6ca66c;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    width: 65px;
+    box-shadow: 3px 3px 1px 2px #458759;
+}
+
+.button:hover{
+    background: #458759;
+}
+
+.dark{
+    background: #00131a;
+    box-shadow: 3px 3px 1px 2px #000;
+}
+
+.dark:hover{
+    background: #000;
+}
+
+.num-del{
+    background: #4b8fc6;
+    box-shadow: 3px 3px 1px 2px #1d517a;
+}
+
+.num-del:hover{
+    background: #1d517a;
+}
+
+.long-button{
+    background: #c62d2c;
+    box-shadow: 3px 3px 1px 2px #8a100f;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    width: 150px;
+}
+
+.long-button:hover{
+    background: #8a100f;
+}
+
+.inner{
+    margin: 15px;
+}
+
+.num-input{
+    grid-area: num-input;
+    font-family: 'Iceland', monospace;
+    color: #00131a;
+    background: #d8f7d7;
+    margin: 15px;
+    padding-right: 10px;
+    width: 325px;
+    height: 85px;
+    text-align: right;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#output-container{
+    height: 100%;
+    font-size: 52px;
+    margin-top: -24px;
+}
+  
+.num-clear { grid-area: num-clear; }
+
+.num-del { grid-area: num-del; }
+
+.divide { grid-area: divide; }
+
+.multiply { grid-area: multiply; }
+
+.subtract { grid-area: subtract; }
+
+.add { grid-area: add; }
+
+.zero { grid-area: zero; }
+
+.one { grid-area: one; }
+
+.two { grid-area: two; }
+
+.three { grid-area: three; }
+
+.four { grid-area: four; }
+
+.five { grid-area: five; }
+
+.six { grid-area: six; }
+
+.seven { grid-area: seven; }
+
+.eight { grid-area: eight; }
+
+.nine { grid-area: nine; }
+
+.dot { grid-area: dot; }
+
+.equal { grid-area: equal; }
+  
